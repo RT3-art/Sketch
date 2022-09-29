@@ -11,7 +11,25 @@
 
 
   <div class="name">
-    this is my awesome sketch
+    look at him go
 </div>
 
-<img src="https://pbs.twimg.com/media/FdwEYjZXwAQHuYT?format=png&name=small" alt="description of image">;
+<img id="silly" src="https://pbs.twimg.com/media/FdwEYjZXwAQHuYT?format=png&name=small" alt="description of image">;
+
+<script>
+
+  const silly = document.querySelector('#silly')
+  const sillyimages = [
+    'https://pbs.twimg.com/media/Fd2S1oZUYAAdI_E?format=jpg&name=medium>',
+    'https://pbs.twimg.com/media/Fd2S1oZUYAAdI_E?format=jpg&name=medium'
+  ]
+  
+function changeSilly () {
+  const ranDec = Math.random() * sillyimages.length
+  const ranInt = Math.floor(ranDec)
+  silly.src = sillyimages[ranInt]
+}
+
+  silly.addEventListener('click', changeSilly)
+  
+</script>
