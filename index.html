@@ -14,20 +14,20 @@
     look at him go
 </div>
 
-<img id="silly" src="https://pbs.twimg.com/media/FdwEYjZXwAQHuYT?format=png&name=small" alt="description of image">;
+<img src="https://pbs.twimg.com/media/FdwEYjZXwAQHuYT?format=png&name=small" alt="silly">
 
 <script>
 
   const silly = document.querySelector('#silly')
-  const sillyimages = [
-    'https://pbs.twimg.com/media/Fd2S1oZUYAAdI_E?format=jpg&name=medium>',
-    'https://pbs.twimg.com/media/Fd2S1oZUYAAdI_E?format=jpg&name=medium'
+  const sillyselection = [
+    'https://pbs.twimg.com/media/FdwEYjZXwAQHuYT?format=png&name=small',
+    'https://pbs.twimg.com/media/Fd2S1oZUYAAdI_E?format=jpg&name=small'
   ]
   
 function changeSilly () {
-  const ranDec = Math.random() * sillyimages.length
+  const ranDec = Math.random() * sillyselection.length
   const ranInt = Math.floor(ranDec)
-  silly.src = sillyimages[ranInt]
+  silly.src = sillyselection[ranInt]
 }
 
   silly.addEventListener('click', changeSilly)
