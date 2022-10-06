@@ -1,35 +1,32 @@
  <style>
-  
-  .name{
-  color: black;
-  font-family: system-ui;
-  font-size: 50;
-  text-align: center;
-  
-  }
-  </style>
+   .name {
+     color: black;
+     font-family: system-ui;
+     font-size: 50;
+     text-align: center;
+
+   }
+ </style>
 
 
-  <div class="name">
-    look at him go
-</div>
+ <div class="name">
+   beware.
+ </div>
 
-<img src="https://pbs.twimg.com/media/FdwEYjZXwAQHuYT?format=png&name=small" alt="silly">
+ <img src="https://pbs.twimg.com/media/FdwEYjZXwAQHuYT?format=png&name=small" alt="silly">
 
-<script>
+ <script>
+   const silly = document.querySelector('#silly')
+   const sillyselection = [
+     'https://pbs.twimg.com/media/FdwEYjZXwAQHuYT?format=png&name=small',
+     'https://pbs.twimg.com/media/Fd2S1oZUYAAdI_E?format=jpg&name=small'
+   ]
 
-  const silly = document.querySelector('#silly')
-  const sillyselection = [
-    'https://pbs.twimg.com/media/FdwEYjZXwAQHuYT?format=png&name=small',
-    'https://pbs.twimg.com/media/Fd2S1oZUYAAdI_E?format=jpg&name=small'
-  ]
-  
-function changeSilly () {
-  const ranDec = Math.random() * sillyselection.length
-  const ranInt = Math.floor(ranDec)
-  silly.src = sillyselection[ranInt]
-}
+   function changeSilly() {
+     const ranDec = Math.random() * sillyselection.length
+     const ranInt = Math.floor(ranDec)
+     silly.src = sillyselection[ranInt]
+   }
 
-  silly.addEventListener('click', changeSilly)
-  
-</script>
+   silly.addEventListener('click', changeSilly)
+ </script>
